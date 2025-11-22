@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Periodic Table</title>
+
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+        background: #1e1e1e;
+        color: white;
+        padding: 20px;
+    }
+
+    h1 {
+        text-align: center;
+        margin-bottom: 20px;
+        font-size: 38px;
+    }
+
+    .table {
+        display: grid;
+        grid-template-columns: repeat(18, 60px);
+        gap: 6px;
+        justify-content: center;
+    }
+
+    .element {
+        background: #2a2a2a;
+        padding: 8px;
+        border-radius: 6px;
+        text-align: center;
+        font-size: 12px;
+        font-weight: bold;
+        border: 1px solid #444;
+    }
+
+  
+    .alkali { background: #ff6961; }
+    .alkaline { background: #ffb480; }
+    .transition { background: #f8f38d; }
+    .post-transition { background: #42d6a4; }
+    .metalloid { background: #08cad1; }
+    .nonmetal { background: #59adf6; }
+    .halogen { background: #9d7de8; }
+    .noble { background: #c780e8; }
+    .lanth { background: #f3bad6; }
+    .actin { background: #fcbad3; }
+
+    .empty {
+        background: transparent;
+        border: none;
+    }
+
+   
+    @media (max-width: 900px) {
+        .table {
+            transform: scale(0.7);
+            transform-origin: top center;
+        }
+    }
+
+    @media (max-width: 600px) {
+        .table {
+            transform: scale(0.55);
+        }
+    }
+</style>
+</head>
+
+<body>
+
+<h1>Periodic Table</h1>
+
+<div class="table">
+
+    <!-- Row 1 -->
+    <div class="element nonmetal">H<br>1</div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="element noble">He<br>2</div>
+
+    <!-- Row 2 -->
+    <div class="element alkali">Li<br>3</div>
+    <div class="element alkaline">Be<br>4</div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="element metalloid">B<br>5</div>
+    <div class="element nonmetal">C<br>6</div>
+    <div class="element nonmetal">N<br>7</div>
+    <div class="element nonmetal">O<br>8</div>
+    <div class="element halogen">F<br>9</div>
+    <div class="element noble">Ne<br>10</div>
+
+    <!-- Row 3 -->
+    <div class="element alkali">Na<br>11</div>
+    <div class="element alkaline">Mg<br>12</div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div><div class="empty"></div>
+    <div class="element metalloid">Al<br>13</div>
+    <div class="element post-transition">Si<br>14</div>
+    <div class="element nonmetal">P<br>15</div>
+    <div class="element nonmetal">S<br>16</div>
+    <div class="element halogen">Cl<br>17</div>
+    <div class="element noble">Ar<br>18</div>
+
+    <!-- Transition Metals Row -->
+    <div class="element alkali">K<br>19</div>
+    <div class="element alkaline">Ca<br>20</div>
+    <div class="element transition">Sc<br>21</div>
+    <div class="element transition">Ti<br>22</div>
+    <div class="element transition">V<br>23</div>
+    <div class="element transition">Cr<br>24</div>
+    <div class="element transition">Mn<br>25</div>
+    <div class="element transition">Fe<br>26</div>
+    <div class="element transition">Co<br>27</div>
+    <div class="element transition">Ni<br>28</div>
+    <div class="element transition">Cu<br>29</div>
+    <div class="element transition">Zn<br>30</div>
+    <div class="element post-transition">Ga<br>31</div>
+    <div class="element metalloid">Ge<br>32</div>
+    <div class="element metalloid">As<br>33</div>
+    <div class="element nonmetal">Se<br>34</div>
+    <div class="element halogen">Br<br>35</div>
+    <div class="element noble">Kr<br>36</div>
+
+  
+
+</div>
+
+</body>
+</html>
